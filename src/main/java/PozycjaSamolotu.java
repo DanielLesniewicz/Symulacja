@@ -1,5 +1,9 @@
+/**
+ * Klasa zajmująca się pozycjonowaniem samolotu
+ */
 public class PozycjaSamolotu {
-    /** Metoda generująca pozycję i związane z nią działania */
+    /** Metoda generująca pozycję i związane z nią działania
+     * @return Pozycja samolotu: 1- ląd, 2- w powietrzu*/
     public static int podajPozycje()
     {
         int pozycja = Generator.generuj(2);

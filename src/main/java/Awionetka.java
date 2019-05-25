@@ -14,6 +14,7 @@ public class Awionetka extends Samolot {
         iloscPasazerowPoklad = Generator.generuj(iloscPasazerowMax);
     }
 
+    /** Zwraca obecny stan miejsc na pokładzie */
     @Override
     public void obecnyStanMiejscPoklad() throws InterruptedException
     {
@@ -23,18 +24,21 @@ public class Awionetka extends Samolot {
         Thread.sleep(1000);
     }
 
+    /** Zwraca miejsc na pokładzie */
     @Override
     public int iloscMiejscaPoklad()
     {
         return iloscPasazerowPoklad;
     }
 
+    /** Zwraca ilość wszystkich miejsc na pokładzie */
     @Override
     public int iloscMiejscaPokladMax()
     {
         return iloscPasazerowMax;
     }
 
+    /** Odpowiada za załadunek */
     @Override
     public void zaladunek()
     {

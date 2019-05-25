@@ -43,12 +43,15 @@ public class Towarowy extends Samolot{
         iloscTowaru = 0;
     }
 
+    /**
+     * Sprawdza obecny stan miejsc w samolocie
+     */
     @Override
     public void obecnyStanMiejscPoklad() throws InterruptedException
     {
         System.out.println("Ilosc zajetego miejsca: " + iloscTowaru );
         Thread.sleep(1500);
-        System.out.println("Mkasymalna ladownosc towaru w samolocie: " + ladownoscMax);
+        System.out.println("Maksymalna ladownosc towaru w samolocie: " + ladownoscMax);
         Thread.sleep(1000);
     }
 }

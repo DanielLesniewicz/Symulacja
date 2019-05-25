@@ -15,7 +15,10 @@ public class WiezaStartow extends WiezaKontroliLotow
             startSamolotu(tmp);
     }
 
-
+    /**
+     * Odpowiada za starty samolotów
+     * @param tmp Który samolot
+     */
     public void startSamolotu(Samolot tmp) throws InterruptedException
     {
         System.out.println("Przygotowywanie samolotu: " + tmp.podajNazwe() + " do startu");

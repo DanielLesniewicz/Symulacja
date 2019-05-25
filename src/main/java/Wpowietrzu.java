@@ -9,7 +9,10 @@ public class Wpowietrzu {
         numerSamolotu = 1250;
     }
 
-
+    /**
+     * Generacja rodzaju samolotu
+     * @return Rodzaj samolotu
+     */
     public Samolot ladujeSamolot()
     {
         int rodzaj = Generator.generuj(3);          // generacja rodzaju samolotu

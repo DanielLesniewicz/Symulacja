@@ -1,6 +1,10 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *Klasa zajmuje się obsługa pasów startowych
+ */
 public class PasyStartowe {
     /** Zmienna wykorzystywana do nazw samolotów*/
     private int numer = 9550;
@@ -9,6 +13,10 @@ public class PasyStartowe {
 
     List<Samolot> pasy = new ArrayList<>(liczbaPasow);
 
+    /**
+     * Sprawdza dostepność pasów
+     * @return bool - Czy jest dostępny pas
+     */
     public boolean dostepnoscPasow() throws InterruptedException
     {
         int ile = Generator.generuj(liczbaPasow);

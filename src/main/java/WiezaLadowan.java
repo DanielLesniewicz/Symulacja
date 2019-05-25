@@ -22,7 +22,10 @@ public class WiezaLadowan extends WiezaKontroliLotow{
         ladowanieSamolotu(samolot);
     }
 
-
+    /**
+     * Odpowiada za lądowania samolotów
+     * @param samolot Obiekt samolotu
+     */
     public void ladowanieSamolotu(Samolot samolot) throws InterruptedException {
 
         System.out.println("Samolot laduje");

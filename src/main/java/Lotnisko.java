@@ -24,10 +24,13 @@ public class Lotnisko {
         magazyn.add(new Awionetka("Awionetka2"));
     }
 
-
+    /**
+     * Wybieranie samolotu z magazynu
+     * @return null gdy magazyn pusty, w przeciwnym wypadku zmienną "temp"
+     */
     public Samolot wybierzZmagazynu()
     {
-        if(magazyn.size() == 0)         // gyd magazyn jest pusty
+        if(magazyn.size() == 0)         // gdy magazyn jest pusty
         {
             return null;
         }
@@ -57,11 +60,18 @@ public class Lotnisko {
         }
     }
 
+    /**
+     * @return bool - czy pasy są dostępne
+     */
     public boolean dostepnoscPasow() throws InterruptedException
     {
         return pasy.dostepnoscPasow();
     }
 
+    /**
+     * Odstawia do magazynu
+     * @param samolot Obiekt samolotu
+     */
     public void odstawDoMagazynu(Samolot samolot)
     {
         magazyn.add(samolot);

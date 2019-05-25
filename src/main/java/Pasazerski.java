@@ -15,7 +15,9 @@ public class Pasazerski extends Samolot{
         iloscPasazerowPoklad = Generator.generuj(iloscPasazerowMax);           // generuje liczbe pasazerow obecna na pokladzie
     }
 
-
+    /**
+     * Wyświetla stan miejsc na pokładzie
+     */
     @Override
     public void obecnyStanMiejscPoklad() throws InterruptedException
     {
@@ -25,12 +27,18 @@ public class Pasazerski extends Samolot{
         Thread.sleep(1000);
     }
 
+    /**
+     * @return Ilość zajętego miejsca na pokładzie
+     */
     @Override
     public int iloscMiejscaPoklad()
     {
         return iloscPasazerowPoklad;
     }
 
+    /**
+     * @return Maksmalna ilość miejsca na pokładzie
+     */
     @Override
     public int iloscMiejscaPokladMax()
     {
