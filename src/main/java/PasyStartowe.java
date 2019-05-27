@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,10 +44,16 @@ public class PasyStartowe {
         }
 
         //wypisanie stanu pasow startowych:
-        for(int i = 0; i < ile; i++)
+        for(int i = 0; i < liczbaPasow; i++)
         {
-            System.out.println((i +1) + ": " + pasy.get(i).podajNazwe());
-            Thread.sleep(1000);
+            if(i < ile) {
+                System.out.println((i + 1) + ": " + pasy.get(i).podajNazwe());
+                Thread.sleep(1000);
+            }
+            else {
+                System.out.println((i + 1) + ": -----WOLNE-----");
+                Thread.sleep(1000);
+            }
         }
         Thread.sleep(2000);
 

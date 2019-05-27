@@ -2,10 +2,11 @@ public class Start {
     public static void main(String[] args) throws InterruptedException
     {
         /** Ilość samolotów, które wezmą udział w symulacji */
+        /** Ilość samolotów, które wezmą udział w symulacji */
         final int ileSamolotow = 10 ;        // przechowuje dla ilu cykli samolotu mamy wykonac symulacje
 
-        WiezaStartow wiezaStartow = new WiezaStartow();
-        WiezaLadowan wiezaLadowan = new WiezaLadowan();
+        WiezaKontroliLotow wieza = new WiezaKontroliLotow();
+
 
         System.out.println("Symulacja rozpoczeta");
 
@@ -17,10 +18,10 @@ public class Start {
 
             if(pozycja == 1)                                // gdy samolot jest na ladzie
             {
-                wiezaStartow.PrzygotowanieDoStartu();
+                wieza.PrzygotowanieDoStartu();
             }
             else                                            // gdy samolot jest w powietrzu
-                wiezaLadowan.przygotowanieDoLadowania();
+                wieza.przygotowanieDoLadowania();
         }
     }
 }
