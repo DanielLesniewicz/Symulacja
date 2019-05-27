@@ -1,3 +1,4 @@
+/** Klasa odpowiedzialna za funkcjonalność lotniska*/
 public class Lotnisko {
 
     private PasyStartowe pasy;

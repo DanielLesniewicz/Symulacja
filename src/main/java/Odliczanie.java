@@ -1,3 +1,5 @@
+
+/** Klasa zawierająca funkcjonalność wyświetlania odliczznia */
 public class Odliczanie {
 
     /** Wyświetla odliczanie

@@ -1,3 +1,4 @@
+/** Klasa zajmująca się zbiornikiem i jego funkcjonalnością */
 public class Zbiornik {
 
     /** Zmienna zawierajaca dane o pojemnosci zbiornika */

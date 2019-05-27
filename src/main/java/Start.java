@@ -2,13 +2,12 @@ public class Start {
     public static void main(String[] args) throws InterruptedException
     {
         /** Ilość samolotów, które wezmą udział w symulacji */
-        /** Ilość samolotów, które wezmą udział w symulacji */
         final int ileSamolotow = 10 ;        // przechowuje dla ilu cykli samolotu mamy wykonac symulacje
 
         WiezaKontroliLotow wieza = new WiezaKontroliLotow();
 
 
-        System.out.println("Symulacja rozpoczeta");
+        System.out.println("SYMULACJA ROZPOCZĘTA");
 
         for(int i = 0; i < ileSamolotow; i++)
         {

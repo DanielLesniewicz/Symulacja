@@ -1,3 +1,4 @@
+/** Klasa mająca funkcjonalność wieży lotów */
 public class WiezaKontroliLotow {
 
     private Lotnisko lotnisko;

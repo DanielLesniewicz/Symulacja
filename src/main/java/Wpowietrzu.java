@@ -1,3 +1,4 @@
+/** Klasa zajmująca się obiektem samolotu, który jest w powietrzu */
 public class Wpowietrzu {
 
     /** Zmienna wykorzystywana przy nazwach samolotów */

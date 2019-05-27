@@ -1,3 +1,4 @@
+/** Klasa zajmująca się funkcjonalnością samolotu typu awionetka */
 public class Awionetka extends Samolot {
 
     /** Maksymalna liczba pasażerów na pokładzie */

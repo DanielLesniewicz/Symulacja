@@ -1,3 +1,4 @@
+/** Klasa implementuje funkcjonalność samolotu */
 public abstract class Samolot {
     /** Nazwa samolotu */
     private String nazwa;

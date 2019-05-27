@@ -1,3 +1,4 @@
+/** Klasa zajmująca się funkcjonalnością samolotu towarowego */
 public class Towarowy extends Samolot{
 
     /** Maksymalna liczba towaru na pokładzie */

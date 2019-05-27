@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+/** Klasa odpowiedzialna za magazyn samolotów*/
 public class Magazyn {
 
 
