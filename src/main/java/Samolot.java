@@ -10,7 +10,7 @@ public abstract class Samolot {
     private int czasRozladunku;
     Zbiornik zbiornik;
 
-    /** Konstruktor samolotu*/
+    /** Konstruktor samolotu */
     public Samolot(String nazwa, int pojemnoscZbiornika, int czasZaladunku, int czasTankowania, int czasRozladunku)
     {
         this.nazwa = nazwa;

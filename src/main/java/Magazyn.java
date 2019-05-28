@@ -23,7 +23,7 @@ public class Magazyn {
     }
 
     /** Wybór samolotu z magazynu
-     * return null, gdy magazyn jest pusty, temp gdy wybrano konkretny samolot*/
+     * @return null, gdy magazyn jest pusty, temp gdy wybrano konkretny samolot*/
     public Samolot wybierzZmagazynu()
     {
         if(magazyn.size() == 0)         // gdy magazyn jest pusty
