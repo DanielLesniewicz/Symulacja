@@ -1,15 +1,18 @@
 /** Klasa mająca funkcjonalność wieży lotów */
 public class WiezaKontroliLotow {
 
+    /** Utowrzenie obiektu typu Lotnisko*/
     private Lotnisko lotnisko;
 
     private Wpowietrzu wpowietrzu = new Wpowietrzu();
 
+    /** Utworzenie instancji lotniska*/
     public WiezaKontroliLotow()
     {
         lotnisko = new Lotnisko();
     }
 
+    /** Zajmuje się przygotowywaniem startów*/
     public void PrzygotowanieDoStartu() throws InterruptedException
     {
         Thread.sleep(2000);
@@ -24,7 +27,8 @@ public class WiezaKontroliLotow {
             startSamolotu(tmp);
     }
 
-
+    /** odpowiada za start samolotu
+     * @param tmp Samolot, który ma startować*/
     public void startSamolotu(Samolot tmp) throws InterruptedException
     {
         System.out.println("Przygotowywanie samolotu: " + tmp.podajNazwe() + " do startu");
@@ -68,6 +72,7 @@ public class WiezaKontroliLotow {
         Thread.sleep(2000);
     }
 
+    /** Odpowiada za przygotowanie do lądowania*/
     public void  przygotowanieDoLadowania() throws InterruptedException
     {
         System.out.println("Pasy na lotnisku: ");
@@ -87,7 +92,8 @@ public class WiezaKontroliLotow {
         ladowanieSamolotu(samolot);
     }
 
-
+    /** odpowiada za lądowanie samolotu
+     * @param samolot Samolot, który ma lądować*/
     public void ladowanieSamolotu(Samolot samolot) throws InterruptedException {
 
         System.out.println("Samolot laduje");

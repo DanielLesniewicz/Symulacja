@@ -1,3 +1,9 @@
+/** Główna klasa odpowiedzialna za uruchomienie programu
+ *
+ * @author Daniel Leśniewicz (lider grupy), Patryk Fidrych
+ * Program "Symulacja lotniska" został stworzony na potrzebę projektu związanego z kursem Programowanie Obiektowe w drugim semestrze studiów (2018/2019) na kierunku Informatyka
+ *
+ * */
 public class Start {
     public static void main(String[] args) throws InterruptedException
     {

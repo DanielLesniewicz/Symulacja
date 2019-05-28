@@ -1,4 +1,4 @@
-/** Klasa zajmująca się funkcjonalnością samolotu pasażerskiego */
+/** Klasa zajmująca się funkcjonalnością samolotu pasażerskiego  */
 public class Pasazerski extends Samolot{
 
 

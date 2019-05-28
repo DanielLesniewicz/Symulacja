@@ -2,9 +2,10 @@ import java.util.ArrayList;
 /** Klasa odpowiedzialna za magazyn samolotów*/
 public class Magazyn {
 
-
+    /** Lista ArrayList na magazyn*/
     private ArrayList<Samolot> magazyn;
 
+    /** Zainicjowanie nowych samolotów na start programu*/
     public Magazyn()
     {
         magazyn = new ArrayList<>();
@@ -21,9 +22,11 @@ public class Magazyn {
         magazyn.add(new Awionetka("Awionetka2"));
     }
 
+    /** Wybór samolotu z magazynu
+     * return null, gdy magazyn jest pusty, temp gdy wybrano konkretny samolot*/
     public Samolot wybierzZmagazynu()
     {
-        if(magazyn.size() == 0)         // gyd magazyn jest pusty
+        if(magazyn.size() == 0)         // gdy magazyn jest pusty
         {
             return null;
         }
@@ -39,6 +42,7 @@ public class Magazyn {
         }
     }
 
+    /** Wyświetlenie magazynu*/
     public void wyswietlMagazyn() throws InterruptedException
     {
         System.out.println("Samoloty dostepne w magazynie: ");
@@ -58,6 +62,8 @@ public class Magazyn {
         }
     }
 
+    /** Odstawienie do magazynu
+     * @param samolot Obiekt samolotu, który ma być odstawiony do magazynu*/
     public void odstawDoMagazynu(Samolot samolot)
     {
         magazyn.add(samolot);

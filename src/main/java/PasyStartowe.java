@@ -14,7 +14,7 @@ public class PasyStartowe {
 
     /**
      * Sprawdza dostepność pasów
-     * @return bool - Czy jest dostępny pas
+     * @return bool - true jeśli są dostępne pasy, w przeciwnym wypadku false
      */
     public boolean dostepnoscPasow() throws InterruptedException
     {

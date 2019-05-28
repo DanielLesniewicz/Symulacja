@@ -4,7 +4,7 @@ public class Lotnisko {
     private PasyStartowe pasy;
     private Magazyn magazyn;
 
-    /** Tworzy instancje, czyli konkretne samoloty*/
+    /** Tworzy instancje*/
     public Lotnisko()
     {
         pasy = new PasyStartowe();
@@ -13,7 +13,7 @@ public class Lotnisko {
 
     /**
      * Wybieranie samolotu z magazynu
-     * @return null gdy magazyn pusty, w przeciwnym wypadku zmienną "temp"
+     * @return Konkretny samolot
      */
     public Samolot wybierzZmagazynu()
     {
@@ -28,7 +28,7 @@ public class Lotnisko {
     }
 
     /**
-     * @return bool - czy pasy są dostępne
+     * @return bool - true jeśli pasy są dostępne
      */
     public boolean dostepnoscPasow() throws InterruptedException
     {
@@ -37,7 +37,7 @@ public class Lotnisko {
 
     /**
      * Odstawia do magazynu
-     * @param samolot Obiekt samolotu
+     * @param samolot Obiekt samolotu do odstawienia do magazynu
      */
     public void odstawDoMagazynu(Samolot samolot)
     {

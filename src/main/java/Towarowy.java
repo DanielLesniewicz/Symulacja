@@ -15,7 +15,7 @@ public class Towarowy extends Samolot{
         iloscTowaru = Generator.generuj(ladownoscMax);
     }
 
-
+    /** Metoda odpowiedzilana za załadunek*/
     public void zaladunek()
     {
         iloscTowaru = ladownoscMax;
